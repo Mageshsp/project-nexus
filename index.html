@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <div class="heading Login">Login</div>
+            <div class="heading Signup">New Registration</div>
+        </div>
+        
+        <div class="container">
+            <div class="option">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="Signup" >
+                <label for="login" class="slide login">Login</label>
+                <label for="Signup" class="slide Signup">Signup</label>
+                <div class="slider"></div>
+            </div>
+                <div class="inner-form">
+                    <!--for login-->
+                    <form action="#" class="login">
+                        <div class="field" id="email">
+                            <input type="email" placeholder="Email address">
+                            <div class="error"></div>
+                        </div>
+                        
+                        <div class="field" id="password">
+                            <input type="password" placeholder="Password" id="pass">
+                            <img  src="./icons/eye-close.png" alt="Show password" id="togglepassword">
+                            <div class="error"></div>
+                        </div>
+                        
+                        <div class="F-password">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                             <input type="submit" value="Login"> 
+                        </div>
+                        <div class="signup-link">Create new Account?<a href="">Signup now</a></div>
+                    </form>
+                    <!--for Signup-->
+                    <form action="#" class="signup">
+                        <div class="field">
+                            <input type="text" placeholder="Fullname" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="field">
+                            <input type="number" placeholder="Mobile Number" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="field">
+                            <input type="email" placeholder="Email address" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="field" id="password-signup">
+                            <input type="password" placeholder="Create Password"  required>
+                            <img  src="./icons/eye-close.png" alt="Show password" id="togglepassword1">
+                            <div class="error"></div>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder=" Confirm Password" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class=" field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="signup" id="submit_signup">
+                        </div>
+                        
+                    </form>
+
+                </div>
+        </div>
+        
+    </div>
+</body>
+
+<script src="./action.js"></script>
+</html>
